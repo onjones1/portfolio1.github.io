@@ -1,0 +1,81 @@
+@import "mixins";
+#contact{
+    padding: 60px 0px;
+    background-color: $pozadina;
+    #contact-wrap{
+        @include position_flex(space-around,center,row);
+        margin: 0px;
+        .heading{
+            hr{
+                @include spacer(40%);
+            }
+        }
+        #contact-info{
+            width: 25%;
+            white-space: nowrap;
+            text-align: left;
+            p{
+                margin: 20px 0px;
+                font-size: 1.4rem;
+                
+            }
+            i{
+                font-size: 2rem;
+                color: $boja_hover;
+            }
+            br{
+                display: none;
+            }
+        }
+        #form{
+            width: 50%;
+            
+            form{
+                width: 100%;
+                margin: 0px auto;
+                @include position_flex(center,center);
+                flex-wrap: wrap;
+                input,textarea{
+                    width: 100%;
+                    height: 50px;
+                    margin: 10px auto;
+                    border-radius: 10px;
+                    text-indent: 10px;
+                    font-size: 1.2rem;
+                    background-color: $pozadina_header;
+                    border: 2px solid $boja_hover;
+                }
+                #send{
+                    color: white;
+                    transition: 0.5s;
+                    width: 40%;
+                }
+                #lname{
+                    float: right;
+                }
+                textarea{
+                    margin-top: 10px;
+                    resize: none;
+                    height: 250px;
+                    padding-top: 10px;
+                    
+                }
+                #email{
+                    color: white;
+                }
+                input[type=text]{
+                    width: 49%;
+                }
+                #wrap-name{
+                    width: inherit;
+                    margin: 10px 0px;
+                    @include position_flex(space-between,center,row);
+                }
+            }
+            #send:hover{
+                background-color: $boja_hover;
+                color: white;
+            } 
+        }    
+    }
+}

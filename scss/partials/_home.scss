@@ -1,0 +1,53 @@
+@import "mixins";
+#home{
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    #home-bg{
+        background-color: rgba(0,0,0,0.5);
+    }
+}
+#main-wrap{
+    @include position_flex();
+    padding: 180px 0px;
+    #main-text{
+        @include position_flex(space-around, center, column);
+        h1,h2,span{
+            font-family: $font_naslov;
+            padding: 15px 0px;
+            text-align: center;
+        }
+        h1{
+            font-size: 3em;
+        }
+        h2{
+            font-weight: 200;
+        }
+        hr{
+            @include spacer();
+        }
+        ul{
+            @include position_flex(space-around, center, row);
+            gap: 20px;
+            font-size: 2em;
+            li{
+                a{
+                    i{
+                        transition: color 0.5s;
+                        &:hover{
+                            color: $boja_hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #main-img{
+        @include position_flex(center);
+        img{
+            width: 70%;
+        }
+    }
+}

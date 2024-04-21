@@ -1,0 +1,281 @@
+@media screen and (max-width: 1425px) {
+  #main-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  #main-text h2 span {
+    display: none;
+  }
+  #main-text h2 span:last-child {
+    display: block;
+  }
+  #about #about-wrap #about-img {
+    width: 30%;
+  }
+  #about #about-wrap #about-text {
+    width: 50%;
+  }
+  #about #about-wrap #about-text #about-info {
+    text-align: center;
+  }
+  #about #about-wrap #about-text #about-info .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  #services #service-wrap .service {
+    min-height: 320px;
+  }
+  #contact #contact-wrap #contact-info {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1230px) {
+  #main-wrap #main-text h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  #main-wrap #main-text h1 span {
+    padding: 0px;
+  }
+  #about #about-wrap #about-img {
+    width: 35%;
+  }
+  #services #service-wrap .service h4 {
+    font-size: 1.4rem;
+  }
+  #services #service-wrap .service p {
+    font-size: 1rem;
+  }
+  #contact #contact-wrap {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1020px) {
+  #about #about-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  #about #about-wrap .heading {
+    display: inline-block;
+  }
+  #about #about-wrap #about-img {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  #about #about-wrap #about-text {
+    width: 65%;
+  }
+  #about #about-wrap #about-text .heading {
+    display: none;
+  }
+  #services #service-wrap {
+    flex-direction: column;
+    gap: 30px;
+  }
+  #services #service-wrap .service {
+    width: 50%;
+    min-height: 0px;
+  }
+  #contact #contact-wrap {
+    justify-content: space-between;
+  }
+  #contact #contact-wrap #contact-info p {
+    font-size: 1.1rem;
+  }
+  #contact #contact-wrap #contact-info i {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrap-center {
+    width: 85%;
+  }
+  #navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  #main-wrap {
+    padding: 200px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: 0px auto;
+  }
+  #main-wrap #main-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+  }
+  #main-wrap #main-text h1 {
+    display: inline;
+  }
+  #main-wrap #main-img {
+    width: 60%;
+  }
+  #projects #projects-wrap .project {
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+  #projects #projects-wrap .project:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  #projects #projects-wrap .project .project-img {
+    width: 70%;
+  }
+  #contact #contact-wrap {
+    flex-direction: column;
+  }
+  #contact #contact-wrap #contact-info {
+    text-align: center;
+    width: 100%;
+  }
+  #contact #contact-wrap #form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  #navigation nav #nav-wrap ul {
+    gap: 25px;
+  }
+  #about #about-wrap #about-text {
+    width: 85%;
+  }
+  #about #about-wrap #about-text hr {
+    width: 50%;
+  }
+  #about #about-wrap #about-img {
+    width: 50%;
+  }
+  #services #service-wrap .service {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrap-center {
+    width: 90%;
+  }
+  .heading h3 {
+    font-size: 2rem;
+  }
+  #navigation #logo a img {
+    width: 80px;
+  }
+  #navigation nav #nav-wrap ul {
+    gap: 20px;
+  }
+  #navigation nav #nav-wrap ul li a {
+    font-size: 1em;
+  }
+  #main-wrap {
+    padding: 120px 0px;
+  }
+  #main-wrap #main-text {
+    font-size: 80%;
+  }
+  #main-wrap #main-img {
+    width: 80%;
+  }
+  #about #about-wrap .heading h3 {
+    font-size: 2rem;
+  }
+  #about #about-wrap #about-img {
+    width: 60%;
+  }
+  #about #about-wrap #about-text {
+    width: 100%;
+  }
+  #about #about-wrap #about-text p {
+    font-size: 1rem;
+  }
+  #about #about-wrap #about-text #about-info .row h3 {
+    font-size: 1.5rem;
+  }
+  #about #about-wrap #about-text #about-info .row p {
+    font-size: 1.1rem;
+  }
+  .button a {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+  #services #service-wrap .service {
+    width: 70%;
+  }
+  #projects #projects-wrap .project .project-img {
+    width: 80%;
+  }
+  #contact #contact-wrap #contact-info i {
+    font-size: 1.2rem;
+  }
+  #contact #contact-wrap #contact-info p {
+    font-size: 1rem;
+  }
+  #contact #contact-wrap #form form input, #contact #contact-wrap #form form textarea {
+    font-size: 0.9rem;
+  }
+  footer .wrap-center .fa-arrow-up, footer .wrap-center li {
+    font-size: 1.4rem;
+  }
+  footer .wrap-center p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 383px) {
+  #navigation nav #nav-wrap ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+    gap: 5px;
+  }
+  #main-wrap #main-text h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+    font-size: 1.7rem;
+  }
+  #main-wrap #main-text h2 {
+    font-size: 1rem;
+  }
+  #main-wrap #main-img {
+    display: none;
+  }
+  #about #about-wrap #about-text {
+    width: 110%;
+  }
+  #services #service-wrap .service {
+    width: 80%;
+  }
+  #projects #projects-wrap .project .project-img {
+    width: 90%;
+  }
+  #contact #contact-wrap #contact-info br {
+    display: inline;
+  }
+  #contact #contact-wrap #contact-info i {
+    font-size: 1rem;
+  }
+  #contact #contact-wrap #contact-info p {
+    font-size: 0.9rem;
+  }
+}

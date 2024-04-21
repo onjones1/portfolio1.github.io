@@ -1,0 +1,33 @@
+@import "mixins";
+footer{
+    background-color: $pozadina_header;
+    .wrap-center{
+        @include position_flex(center,center,column);
+        padding-top: 20px;
+        .fa-arrow-up{
+            font-size: 2rem;
+            padding-bottom: 10px;
+        }
+        ul{
+            @include position_flex(space-around, center, row);
+            gap: 20px;
+            font-size: 2rem;
+            li{
+                a{
+                    i{
+                        transition: color 0.5s;
+                        &:hover{
+                            color: $boja_hover;
+                        }
+                    }
+                }
+            }
+        }
+        p{
+            padding: 10px 0px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+    }
+    
+}

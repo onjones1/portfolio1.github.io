@@ -1,0 +1,22 @@
+@import "_var.scss";
+@mixin position_flex($jc: space-between, $ai: center, $fd: row) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+    margin: 0px auto;
+  }
+@mixin clear_list($cl: white) {
+  list-style-type: none;
+  text-decoration: none;
+  color: $cl;
+
+}
+@mixin spacer($wd: 20%,$hg: 5px, $clr: $boja_hover) {
+    width: $wd;
+    height: $hg;
+    background-color: $clr;
+    border-radius: 10px 3px 10px 3px;
+    border-color: $clr;
+    margin: 10px auto;
+}

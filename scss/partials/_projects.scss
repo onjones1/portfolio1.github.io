@@ -1,0 +1,50 @@
+@import "mixins";
+#projects{
+    padding: 60px 0px;
+    background-color: $pozadina_header;
+    .heading{
+        @include position_flex(center,center,column);
+        hr{
+            margin: 20px 0px;
+            @include spacer(10%);
+        }
+    }
+    #projects-wrap{
+        width: 100%;
+        padding-top: 20px;
+        @include position_flex(space-around,center,column);
+        gap: 50px;
+        .project{
+            @include position_flex(center,center,row);
+            gap: 40px;
+            &:nth-child(even){
+                flex-direction: row-reverse;
+            }
+            .project-text{
+                padding: 20px;
+                font-size: 1.3rem;
+                text-align: center;
+                hr{
+                    @include spacer();
+                    margin: 10px auto;
+                    font-size: 1.6rem;
+                    min-width: 50px;
+                }
+            }
+            .project-img{
+                width: 60%;
+                border-radius: 20px;
+                box-shadow: 10px 10px $boja_hover;
+                img{
+                    border: 1px solid $boja_hover;
+                    width: 100%;
+                    border-radius: 20px;
+                    transition: transform 0.5s;
+                    &:hover{
+                        transform: translate(10px,12px);
+                    }
+                }
+            }
+        }
+    }
+}

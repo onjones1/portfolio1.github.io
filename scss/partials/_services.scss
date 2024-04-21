@@ -1,0 +1,42 @@
+@import "mixins";
+#services{
+    background-color: $pozadina;
+    padding: 50px 0px;
+    .heading{
+        @include position_flex(center,center,column);
+        gap: 15px;
+        hr{
+            @include spacer(10%);
+        }
+    }
+    #service-wrap{
+        padding: 40px 0px;
+        @include position_flex();
+        .service{
+            width: 26%;
+            min-height: 280px;
+            background-color: $pozadina_header;
+            text-align: center;
+            padding: 30px 20px;
+            border: 2px solid $boja_hover;
+            border-radius: 20px;
+            i{
+                font-size: 5rem;
+                
+            }
+            h4{
+                
+                padding: 10px;
+                font-size: 1.6rem;
+            }
+            hr{
+                @include spacer(40%,5px, $boja_hover);
+                margin: 10px auto;
+            }
+            p{
+                font-size: 1.1rem;
+                font-weight: 300;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import "partials/mixins";
+@import "partials/var";
+@import "partials/header";
+@import "partials/home";
+@import "partials/about";
+@import "partials/services";
+@import "partials/projects";
+@import "partials/contact";
+@import "partials/footer";
+*{
+    margin: 0px;
+    padding: 0px;
+    @include clear_list();
+    font-family: $font_tekst;
+    scroll-behavior: smooth;
+}
+.wrap-center{
+    width: 80%;
+    margin: 0px auto;
+}
+.heading{
+    h3{
+        font-family: $font_naslov;
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    hr{
+        @include spacer(10%);
+    }
+}
+.button{
+    padding: 20px 0px;
+    a{
+        font-size: 1.4rem;
+        padding: 15px 30px;
+        border: 3px solid $boja_hover;
+        border-radius: 10px;
+        transition: background-color 0.4s;
+        &:hover{
+            background-color: $boja_hover;
+
+        }
+    }
+}
